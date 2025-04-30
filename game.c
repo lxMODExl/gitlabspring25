@@ -8,7 +8,7 @@
 //Gerard McCallion
 
 // Nanu Panchamurthy
-
+// carlos acevedo
 
 
 
@@ -89,6 +89,7 @@ void kobesRoom(void);
 
 void angelasRoom26(void);
 
+void carlosroom60(void);
 
 void cameronDOOMFn(void);
 
@@ -578,6 +579,14 @@ int main(int argc, char *argv[])
 				break;
 			}
 
+			case 60:
+			{
+				puts("room60");
+				carlosroom60();
+				
+				break;
+			}
+
 
 			case 61:
 			{
@@ -950,6 +959,10 @@ void ryanRoom38(void)
 	printf("Ryan cscuser38\n");
 }
 
+void carlosroom60(void)
+{
+	printf("welcome user60\n");
+}
 
 
 void brentTestRoom(void)
