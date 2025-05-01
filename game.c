@@ -2420,7 +2420,41 @@ void jovannyFunction(int jovannyNum)
 
 void room53game(void)
 {
-	printf("cscuser53\n");
+	char choicesMade[5];
+	int input,y;
+
+	printf("You close the door behind you. You can barely see into the room,\n");
+	printf("but it looks like you are in decently sized storage room.\n");
+	printf("You hear a loud roar coming from a closed door across the room.\n");
+	printf("You can hear whatever made that noise approaching the door.\n");
+	printf("Not wanting to find out what it is, you quickly look around to decide on a place to hide.\n");
+	printf("You see:\n");
+	printf("1) A locker.\n");
+	printf("2) A crate\n");
+	printf("3) A desk\n");
+	printf("4) A bed frame\n");
+	printf("5) A tarp");
+	scanf("%d", &input);
+
+	while(input >= 1|| input <= 5)
+	{
+		printf("Invalid choice, enter a valid choice.\n");
+		scanf("%d", &input);
+	}
+
+	switch (input)
+	{
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+	}
 }
 
 void room6game(void)
