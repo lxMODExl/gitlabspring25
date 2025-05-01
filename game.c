@@ -2420,8 +2420,10 @@ void jovannyFunction(int jovannyNum)
 
 void room53game(void)
 {
+	srand(time(NULL));
+	int rNum = rand() % 5 + 1;
 	char choicesMade[5];
-	int input,y;
+	int input, y;
 
 	printf("You close the door behind you. You can barely see into the room,\n");
 	printf("but it looks like you are in decently sized storage room.\n");
@@ -2431,9 +2433,7 @@ void room53game(void)
 	printf("You see:\n");
 	printf("1) A locker.\n");
 	printf("2) A crate\n");
-	printf("3) A desk\n");
-	printf("4) A bed frame\n");
-	printf("5) A tarp");
+	printf("3) A table\n");
 	scanf("%d", &input);
 
 	while(input >= 1|| input <= 5)
@@ -2445,14 +2445,13 @@ void room53game(void)
 	switch (input)
 	{
 		case 1:
+			printf("You rush to hide inside the locker.\n");
 			break;
 		case 2:
+			printf("You run behind the crate to hide .\n");
 			break;
 		case 3:
-			break;
-		case 4:
-			break;
-		case 5:
+			printf("You go to hide under the table.\n");
 			break;
 	}
 }
